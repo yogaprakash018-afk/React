@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --bg-card: #1b1e27;
+    --bg-page: #0f1115;
+    --text-primary: #f5f5f5;
+    --text-muted: #9a9ca3;
+    --accent-orange: #e8923c;
+    --accent-blue: #0a66c2;
+    --border-subtle: #2a2d37;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-page);
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+.card {
+    width: 300px;
+    background: var(--bg-card);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+}
+
+/* ---- Info / header section ---- */
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 0 20px;
+}
+
+.profile-photo {
+    width: 100%;
+    aspect-ratio: 4 / 3.2;
+    object-fit: cover;
+}
+
+.name {
+    margin: 18px 0 2px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.title {
+    margin: 0 0 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent-orange);
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn .icon {
+    width: 14px;
+    height: 14px;
+}
+
+.btn-email {
+    background: #f5f5f5;
+    color: #1b1e27;
+}
+
+.btn-linkedin {
+    background: var(--accent-blue);
+    color: #fff;
+}
+
+/* ---- About / Interests sections ---- */
+
+.section {
+    padding: 18px 24px;
+    border-top: 1px solid var(--border-subtle);
+}
+
+.section-heading {
+    margin: 0 0 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.section-text {
+    margin: 0;
+    font-size: 0.82rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+/* ---- Footer ---- */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    border-top: 1px solid var(--border-subtle);
+}
+
+.copyright {
+    font-size: 0.75rem;
+    font-style: normal;
+    color: var(--text-muted);
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: #2a2d37;
+    color: var(--text-muted);
+}
+
+.social-icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+.social-icon:hover {
+    color: var(--text-primary);
+}
