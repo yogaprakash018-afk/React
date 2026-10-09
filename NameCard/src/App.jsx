@@ -56,7 +56,7 @@ function Footer() {
         <footer className="footer">
             <em className="copyright">&copy; Yogaprakash 2026</em>
             <div className="social-links">
-                <a className="social-icon" href="https://github.com/yogaprakash018-afk" aria-label="Github">
+                <a className="social-icon" href="#" aria-label="Github">
                     <svg viewBox="0 0 24 24" fill="currentColor">
                         <path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.1-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.6-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.3 9.3 0 0 1 4.9 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.6 1 1.5 1 2.6 0 3.8-2.3 4.6-4.6 4.9.4.3.7.9.7 1.8v2.6c0 .3.2.6.7.5A10 10 0 0 0 12 2Z" />
                     </svg>
