@@ -38,7 +38,7 @@ function Entry({ img, country, googleMapsLink, title, dates, text }) {
 
 
 export default function App() {
-  const datas = data.map(entry => <Entry key={entry.title} {...entry}/>)
+  const datas = data.map(entry => <Entry key={entry.id} {...entry}/>)
   return (
     <>
     <Header/>
