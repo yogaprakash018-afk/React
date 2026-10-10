@@ -1,36 +1,50 @@
 import data from './data.mjs';
 
-
 function Header() {
   return (
     <header className="hero">
       <img src="/globe.png" alt="globe-image" width='24px' height='24px'id="globe"/>
-      <p>My Travel Journel</p>
+      <p>My Travel “Journal</p>
     </header>
   );
 };
 
-function Entry() {
+function Entry({ img, country, googleMapsLink, title, dates, text }) {
   return (
-  <article className='country'>
-    <img src="https://scrimba.com/links/travel-journal-japan-image-url" alt="Mt-Fuji-image" width='125px' height='168px'/>
-    <div className='country-details'>
-      <p><span><img src="/marker.png" alt="marker-image" width='7px' height='9.55px'/></span>Japan</p>
-      <p>{data.title}</p>
-      <a href='https://maps.app.goo.gl/6RLYZDuuuqJ7kNGZ9'>View on google maps</a>
-      <p>12 Jan, 2021 - 24 Jan, 2021</p>
-      <p>Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists.</p>
+  <article className="journal-entry">
+
+    <div className="main-image-container">
+      <img src={img.src} alt={img.alt} className='main-image'/> 
     </div>
+
+    <div className="info-container">
+      <img src='/marker.png' alt='Location-marker'/>
+
+      <span className="country">{country}</span>
+
+      <a href={googleMapsLink} target="_blank">View on Google Map</a>
+
+      <p className="entry-title">{title}</p>
+
+      <p className="trip-dates">{dates}</p>
+      
+      <p className="entry-text">{text}</p>
+
+    </div>
+
     </article>
   );
 };
 
 
 export default function App() {
+  const datas = data.map(entry => <Entry key={entry.title} {...entry}/>)
   return (
     <>
     <Header/>
-    <Entry />
+    <main>
+      {datas}
+    </main>
     </>
   );
 }; 
