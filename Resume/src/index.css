@@ -1,0 +1,71 @@
+body {
+    line-height: 1.3;
+}
+
+hr {
+    height: 2px;
+    background-color: grey;
+    border: none;
+    border-radius: 2px;
+    width: 100%;
+}
+
+.heading {
+    color: #3498db;
+}
+
+#name {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    gap: 6px 40px;
+    font-size: 0.95em;
+}
+
+.contact-grid div {
+    min-width: 0;
+    white-space: nowrap;
+}
+
+a, a:visited {
+    color: #0000ee;
+}
+
+.marks {
+    background-color: beige;
+}
+
+p, li {
+    text-align: justify;
+    hyphens: auto;
+}
+
+.links-github li {
+    text-align: left;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.project-date {
+    font-weight: bold;
+}
+
+h2 {
+    break-after: avoid;
+}
+
+@media print {
+    .project-block {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+}
